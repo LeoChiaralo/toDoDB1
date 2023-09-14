@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>ToDo List</h1>
+    </header>
+
+    <main>
+      <section id="taskContainer">
+        <p>Your Tasks</p>
+
+        <ul id="taskList"></ul>
+      </section>
+
+      <section id="addButton">
+        <input type="button" value="Add task" onclick="openAdd()" />
+      </section>
+
+      <section id="addContainer">
+        <div>
+          <input type="text" placeholder="Text your task here!" id="addTask" />
+          <input
+            type="button"
+            value="Cancel"
+            id="cancelButton"
+            onclick="cancelTask()"
+          />
+          <input
+            type="button"
+            value="Save"
+            id="saveButton"
+            onclick="saveTask()"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
