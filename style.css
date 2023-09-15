@@ -48,6 +48,7 @@ main {
 
 #taskContainer p {
   color: black;
+
   font-family: "Pacifico", cursive;
   font-size: 2rem;
   font-weight: 400;
@@ -75,6 +76,23 @@ main {
 
 #taskList li {
   padding: 10px;
+}
+
+#taskList li button {
+  background: none;
+  border: none;
+  color: rgba(255, 0, 0, 0);
+
+  cursor: pointer;
+
+  margin-left: 10px;
+
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+#taskList li:hover button {
+  color: red;
 }
 
 #addButton {
@@ -110,9 +128,7 @@ main {
   background-color: #5d6d7e;
 
   width: 500px;
-
   padding: 20px;
-
   border-radius: 10px;
 
   text-align: center;
